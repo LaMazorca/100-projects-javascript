@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Tinder Swipe (100 proyects javascript)</title>
+</head>
+<body class="font-sans grid place-content-center min-h-screen overflow-hidden select-none bg-[#e5e5e5]">
+    <main class=" w-80 h-[640px] bg-no-repeat bg-contain drop-shadow-[0_0_10px_rgb(0,0,0,0.3)] flex" style="background-image: url(/01-tinder-swipe/src/images/iphone.webp);">
+        <section class="bg-[#f6f6f6] w-full rounded-[32px] flex  flex-col overflow-hidden relative py-4 px-[6px] m-6 gap-6">
+            <header class="flex justify-center">
+                <img src="./images/tinder-logo.webp" alt="Tinder Logo" class="size-6">
+            </header>
+            <div class="cards relative size-full my-0 mx-auto">
+                <article class="rounded-lg overflow-hidden absolute size-full cursor-grab inset-0 z-10 shadow-sm">
+                    <img src="/01-tinder-swipe/src/images/1.webp" alt="Ana, red hair, green eyes, white skin, 23 years old" class="size-full object-cover">
+                    <h2 class="text-white absolute inset-0 size-full p-4 z-20 bg-gradient-to-t from-[#00000088] from-20% to-transparent to-40% flex items-end text-2xl">Ana <span class="ml-[6px] text-lg leading-normal font-normal">23</span></h2>
+                    <div class="choice nope rounded-lg border-solid border-4 z-[999999] absolute top-8 px-1 py-2 text-2xl font-bold rotate-[30deg] right-4 text-[#f44336] border-[#f44336] opacity-0">NOPE</div>
+                    <div class="choice like rounded-lg border-solid border-4 z-[999999] absolute top-8 left-4 px-2 py-1 text-2xl font-bold border-[#4caf50] text-[#4caf50] rotate-[-30deg] opacity-0">LIKE</div>
+                </article>
+                <article class="rounded-lg overflow-hidden absolute size-full cursor-grab inset-0 z-10 shadow-sm">
+                    <img src="/01-tinder-swipe/src/images/2.webp" alt="Alex, brow hair 27 years old" class="size-full object-cover">
+                    <h2 class="text-white absolute inset-0 size-full p-4 z-20 bg-gradient-to-t from-[#00000088] from-20% to-transparent to-40% flex items-end text-2xl">Alex <span class="ml-[6px] text-lg leading-normal font-normal">27</span></h2>
+                    <div class="choice nope rounded-lg border-solid border-4 z-[999999] absolute top-8 px-1 py-2 text-2xl font-bold rotate-[30deg] right-4 text-[#f44336] border-[#f44336] opacity-0">NOPE</div>
+                    <div class="choice like rounded-lg border-solid border-4 z-[999999] absolute top-8 left-4 px-1 py-2 text-2xl font-bold border-[#4caf50] text-[#4caf50] rotate-[-30deg] opacity-0">LIKE</div>
+                </article>
+                <span class="grid place-content-center text-[#777] text-sm text-center h-full z-[-1]">No hay más personas cerca de ti... <br>
+                Vuelve a intentarlo más tarde</span>
+            </div>
+            <footer class="grid grid-cols-[repeat(5,_1fr)] gap-3 px-6 justify-center items-center">
+                <button class="size-8 rounded-[50%] bg-no-repeat bg-[-140px_0px] bg-[length:175px] cursor-pointer duration-[300ms] ease-linear hover:scale-150" style="background-image:  url('/01-tinder-swipe/src/images/tinder-icons.webp');" aria-label="undo"></button>
+                <button class="size-12 rounded-[50%] bg-no-repeat bg-[-150px_0px] bg-[length:250px] cursor-pointer duration-[300ms] ease-linear hover:scale-150" style="background-image:  url('/01-tinder-swipe/src/images/tinder-icons.webp');" aria-label="remove"></button>
+                <button class="size-8 rounded-[50%] bg-no-repeat bg-[-70px_0px] bg-[length:175px] cursor-pointer duration-[300ms] ease-linear hover:scale-150" style="background-image:  url('/01-tinder-swipe/src/images/tinder-icons.webp');" aria-label="star"></button>
+                <button class="size-12 rounded-[50%] bg-no-repeat bg-[-45px_0px] bg-[length:250px] cursor-pointer duration-[300ms] ease-linear hover:scale-150" style="background-image:  url('/01-tinder-swipe/src/images/tinder-icons.webp');" aria-label="fav"></button>
+                <button class="size-8 rounded-[50%] bg-no-repeat bg-[0px_0px] bg-[length:175px] cursor-pointer duration-[300ms] ease-linear hover:scale-150" style="background-image:  url('/01-tinder-swipe/src/images/tinder-icons.webp');" aria-label="zap"></button>
+            </footer>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
